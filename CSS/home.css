@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/background1.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px 0 20px;
+    height: 60px;
+}
+
+.logo {
+    cursor: pointer;
+    width: 140px;
+    height: 36px;
+    margin-top: -19px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 30px;
+}
+
+nav ul li::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: rgb(255, 255, 255);
+    display: block;
+    margin: left;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+.icon i {
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    padding: 0 6px;
+    transition: 0.5s;
+}
+
+.icon {
+    margin-top: -10px;
+}
+
+.icon i:hover {
+    color: red;
+}
+
+.mega-menu-top {
+    position: absolute;
+    width: 180px;
+    height: 200px;
+    background: rgb(0, 0, 0);
+    transition: all 0.5s ease;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    display: none;
+}
+
+.inner-mega-menu p {
+    cursor: pointer;
+    padding: 0 5px;
+    transition: all 0.5s ease;
+    font-size: 16px;
+    color: white;
+}
+
+.inner-mega-menu p:hover {
+    color: red;
+    margin-left: 10px;
+}
+
+nav ul li:hover .mega-menu-top {
+    display: block;
+}
+
+.mega-menu-bottom {
+    position: absolute;
+    width: 252px;
+    height: 240px;
+    background: rgb(0, 0, 0);
+    transition: all 0.5s ease;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    display: none;
+}
+
+nav ul li:hover .mega-menu-bottom {
+    display: block;
+}
+
+.mega-menu-jacket {
+    position: absolute;
+    width: 270px;
+    height: 200px;
+    background: rgb(0, 0, 0);
+    transition: all 0.5s ease;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    display: none;
+}
+
+nav ul li:hover .mega-menu-jacket {
+    display: block;
+}
+
+.mega-menu-sale {
+    position: absolute;
+    width: 120px;
+    height: 75px;
+    background: rgb(0, 0, 0);
+    transition: all 0.5s ease;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    display: none;
+}
+
+nav ul li:hover .mega-menu-sale {
+    display: block;
+}
+
+/* CONTENT */
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+.content-col {
+    flex-basis: 40%;
+    background: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+.content-col a img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* NEW ARRIVALS */

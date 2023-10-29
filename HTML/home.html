@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/home.css">
+    <title>Candles Studio là thương hiệu cung cấp sản phẩm Unisex</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<body onload="slider()">
+
+    <!------------------------ NAVBAR -----------------------------> 
+
+    <header>
+        <nav>
+            <a href="home.html"><img class="logo" src="../images/logo.webp" alt=""></a>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li>
+                    <a href="#">TOP</a>
+                    <div class="mega-menu-top">
+                        <div class="inner-mega-menu">
+                            <p>T-SHIRT</p>
+                            <p>POLO</p>
+                            <p>SHIRT</p>
+                            <p>SWEATER</p>
+                            <p>HOODIE</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">BOTTOM</a>
+                    <div class="mega-menu-bottom">
+                        <div class="inner-mega-menu">
+                            <p>PANTS</p>
+                            <p>JEANS</p>
+                            <p>SHORTS</p>
+                            <p>SHELL PANTS</p>
+                            <p>SWEATPANTS</p>
+                            <p>CARGO PANTS</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">JACKET</a>
+                    <div class="mega-menu-jacket">
+                        <div class="inner-mega-menu">
+                            <p>KAKI JACKET</p>
+                            <p>BOMBER JACKET</p>
+                            <p>FLANNEL JACKET</p>
+                            <p>OVERCOAT</p>
+                            <p>VEST/GILET</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">SALE</a>
+                    <div class="mega-menu-sale">
+                        <div class="inner-mega-menu">
+                            <p>SS23</p>
+                            <p>FW23</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">ACCESSORIES</a>
+                    <div class="mega-menu-sale">
+                        <div class="inner-mega-menu">
+                            <p>BAGS</p>
+                            <p>CAPS</p>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">ABOUT US</a></li>
+            </ul>
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-bag-shopping"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!------------------------ CONTENT ----------------------------->
+
+    <section class="content">
+        <div class="content-col">
+            <a href=""><img src="../images/content1.jpeg" alt=""></a>
+        </div>
+        <div class="content-col">
+            <a href=""><img src="../images/content2.jpeg" alt=""></a>
+        </div>
+        <div class="content-col">
+            <a href=""><img src="../images/content3.jpeg" alt=""></a>
+        </div>
+    </section>  
+
+    <!------------------------ NEW ARRIVALS ----------------------------->
+
+    <section class="items">
+        
+    </section>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+        
+        var slideImg = documen.getElementById("slideImg");
+        var images = new Array(
+            "../images/background2.jpeg",
+            "../images/background2.jpeg",
+            "../images/background2.jpeg",
+            "../images/background2.jpeg"
+        );
+
+        var len = images.length;
+        var i = 0;
+
+        function slider (){
+            if(i > len-1) {
+                i = 0;
+            }
+            slideImg.src = images[i];
+            i++;
+            setTimeout('slider()', 3000);
+        }
+
+    </script>
+</body>
+</html>
